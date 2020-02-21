@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Tailwind`,
-    description: `Gatsby starter styled with Tailwind`,
+    title: `CourseOS - A Customizable, Self-hosted Online Course Platform`,
+    description: `A Customizable, Self-hosted Online Course Platform`,
     author: `@taylorbryant`
   },
   plugins: [
