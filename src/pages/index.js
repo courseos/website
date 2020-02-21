@@ -92,7 +92,7 @@ function IndexPage() {
       <div className="container mx-auto">
         <div className="text-center px-3 py-16 pb-24 lg:px-0">
           <h1 className="my-4 text-2xl md:text-3xl lg:text-5xl font-black leading-tight text-white">
-            Build, host, and sell your online course!
+            Build, host, and sell your online course
           </h1>
           <p className="leading-normal text-white text-base md:text-xl lg:text-2xl mb-8">
             CourseOS is a fully-customizable, self-hosted online course
