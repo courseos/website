@@ -90,7 +90,7 @@ function IndexPage() {
       </nav>
 
       <div className="container mx-auto">
-        <div className="text-center px-3 py-16 lg:px-0">
+        <div className="text-center px-3 py-16 pb-24 lg:px-0">
           <h1 className="my-4 text-2xl md:text-3xl lg:text-5xl font-black leading-tight text-white">
             Build, host, and sell your online course!
           </h1>
