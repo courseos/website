@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import Layout from "../components/layout";
@@ -13,6 +13,7 @@ import audience from "../images/audience.svg";
 const PRICE = 49;
 
 function IndexPage() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <Layout>
       <SEO
@@ -35,6 +36,7 @@ function IndexPage() {
             <button
               id="nav-toggle"
               className="flex items-center px-3 py-2 border rounded text-white border-white hover:opacity-0.9 appearance-none focus:outline-none"
+              onClick={() => setMenuOpen(open => !open)}
             >
               <svg
                 className="fill-current h-3 w-3"
@@ -48,7 +50,9 @@ function IndexPage() {
           </div>
 
           <div
-            className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 text-black p-4 lg:p-0 z-20"
+            className={`w-full flex-grow lg:flex lg:items-center lg:w-auto ${
+              menuOpen ? "hidden" : ""
+            } lg:block mt-2 lg:mt-0 text-black p-4 lg:p-0 z-20`}
             id="nav-content"
           >
             <ul className="list-reset lg:flex justify-end flex-1 items-center">
@@ -79,7 +83,7 @@ function IndexPage() {
             </ul>
             <AnchorLink
               id="navAction"
-              className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-extrabold rounded mt-4 lg:mt-0 py-4 px-8 shadow hover:shadow-lg"
+              className="mx-auto hidden lg:block lg:mx-0 hover:underline bg-white text-gray-800 font-extrabold rounded mt-4 lg:mt-0 py-4 px-8 shadow hover:shadow-lg"
               href="#pricing"
             >
               Buy Now (${PRICE})
