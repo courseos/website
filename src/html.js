@@ -8,12 +8,11 @@ export default function HTML(props) {
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>
-          CourseOS - Customizable, Self-hosted Online Course Platform
-        </title>
+        <title></title>
         <meta name="description" content="" />
         <meta name="keywords" content="" />
         <meta name="author" content="" />
+        <script src="https://gumroad.com/js/gumroad.js"></script>
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>

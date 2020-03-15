@@ -5,7 +5,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 import logo from "../images/logo.svg";
-import logoSolid from "../images/logo-solid.svg";
+// import logoSolid from "../images/logo-solid.svg";
 import customize from "../images/customize.svg";
 import zeroFees from "../images/zero-fees.svg";
 import audience from "../images/audience.svg";
@@ -78,33 +78,37 @@ function IndexPage() {
                 </AnchorLink>
               </li>
             </ul>
-            <AnchorLink
+            <a
               id="navAction"
               className="mx-auto hidden lg:block lg:mx-0 hover:underline bg-white text-gray-800 font-extrabold rounded mt-4 lg:mt-0 py-4 px-8 shadow hover:shadow-lg"
-              href="#pricing"
+              href="https://gum.co/courseos?wanted=true"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Buy Now (${PRICE})
-            </AnchorLink>
+              Pre-order Now (${PRICE})
+            </a>
           </div>
         </div>
       </nav>
 
       <div className="container mx-auto">
-        <div className="text-center px-3 py-16 pb-24 lg:px-0">
+        <div className="text-center px-3 py-16 pb-8 lg:px-0">
           <h1 className="my-4 text-2xl md:text-3xl lg:text-5xl font-black leading-tight text-white">
-            Build, host, and sell your online course
+            Create, host, and sell your online course
           </h1>
           <p className="leading-normal text-white text-base md:text-xl lg:text-2xl mb-8">
             CourseOS is a fully-customizable, self-hosted online course
             platform.
           </p>
 
-          <AnchorLink
-            href="#pricing"
+          <a
+            href="https://gum.co/courseos?wanted=true"
             className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-extrabold rounded my-2 md:my-6 py-4 px-8 shadow-lg w-48"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Buy Now (${PRICE})
-          </AnchorLink>
+            Pre-order Now (${PRICE})
+          </a>
           <AnchorLink
             href="#features"
             className="inline-block mx-auto lg:mx-0 hover:underline bg-transparent text-white font-extrabold my-2 md:my-6 py-2 lg:py-4 px-8"
@@ -113,9 +117,9 @@ function IndexPage() {
           </AnchorLink>
         </div>
 
-        {/* <div className="flex items-center w-full mx-auto content-end">
+        <div className="flex items-center w-full mx-auto content-end mb-16">
           <div className="browser-mockup flex flex-1 m-6 md:px-0 md:m-12 bg-white w-1/2 rounded shadow-xl"></div>
-        </div> */}
+        </div>
       </div>
 
       {/* <section className="bg-white border-b py-12 ">
@@ -190,8 +194,10 @@ function IndexPage() {
                 Fully Customizable
               </h3>
               <p className="text-gray-600">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                at ipsum eu nunc commodo posuere et sit amet ligula.
+                Whether you want to tweak your landing page or completely change
+                the course experience, CourseOS is fully customizable. Full
+                access to the underlying code lets you add features and modify
+                existing ones to your heart&apos;s content.
               </p>
             </div>
             <div className="w-full sm:w-1/2 p-6">
@@ -209,8 +215,10 @@ function IndexPage() {
                   No Extra Fees
                 </h3>
                 <p className="text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
+                  Pay once up front, and never worry about monthly fees,
+                  transaction charges, or losing access if you stop paying.
+                  Plus, because of how CourseOS is built, you can usually host
+                  your course for free!
                 </p>
               </div>
             </div>
@@ -222,8 +230,9 @@ function IndexPage() {
                 Own Your Audience
               </h3>
               <p className="text-gray-600">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                at ipsum eu nunc commodo posuere et sit amet ligula.
+                Your audience is your most valuable asset when building your
+                course. CourseOS lets you easily manage, export, and communicate
+                with your audience, without worrying about platform lock-in.
               </p>
             </div>
             <div className="w-full sm:w-1/2 p-6">
@@ -358,8 +367,8 @@ function IndexPage() {
                   <button className="mx-auto lg:mx-0 hover:underline bg-gray-800 text-white font-bold rounded my-6 py-4 px-8 shadow-lg flex justify-center">
                     <svg
                       className="mr-4"
-                      width="30"
-                      height="30"
+                      width="26"
+                      height="26"
                       viewBox="0 0 1024 1024"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -395,9 +404,12 @@ function IndexPage() {
                   $49 <span className="text-base">/ per course</span>
                 </div>
                 <div className="flex items-center justify-center">
-                  <button className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded my-6 py-4 px-8 shadow-lg">
-                    Buy Now
-                  </button>
+                  <a
+                    href="https://gum.co/courseos?wanted=true"
+                    className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded my-6 py-4 px-8 shadow-lg"
+                  >
+                    Pre-order Now
+                  </a>
                 </div>
               </div>
             </div>
@@ -434,7 +446,7 @@ function IndexPage() {
 
       <section className="gradient w-full mx-auto text-center py-12">
         <h2 className="w-full my-2 text-5xl font-black leading-tight text-center text-white">
-          Build Your Course
+          Create your online course today!
         </h2>
         <div className="w-full mb-4">
           <div className="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
@@ -443,17 +455,17 @@ function IndexPage() {
         {/* <h3 className="my-4 text-3xl font-bold text-white">
         </h3> */}
         <div className="mt-16 mb-8">
-          <AnchorLink
-            href="#pricing"
+          <a
+            href="https://gum.co/courseos?wanted=true"
             className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded py-4 px-8 shadow-lg"
           >
-            Buy Now (${PRICE})
-          </AnchorLink>
+            Pre-order Now (${PRICE})
+          </a>
         </div>
       </section>
 
       {/* <!--Footer--> */}
-      <footer className="bg-white ">
+      {/* <footer className="bg-white ">
         <div className="container mx-auto pt-8 px-8">
           <div className="w-full flex flex-col md:flex-row py-6">
             <div className="flex-1 mb-6 mr-16">
@@ -583,7 +595,7 @@ function IndexPage() {
             </div>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </Layout>
   );
 }
